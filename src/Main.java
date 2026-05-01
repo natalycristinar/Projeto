@@ -9,7 +9,8 @@ public class Main {
         // Dados iniciais para teste
         gerenciador.matricularAluno(new Aluno("Carlos Silva", "2026001", true));
         gerenciador.registrarAcao(new AcaoInclusiva("Rampa de Acesso", "Instalação de rampa na entrada principal"));
-
+        gerenciador.registrarAcao(new AcaoInclusiva("Capacitaçao", "Treinamento de inclusao para professores"));
+        
         while (opcao != 5) {
             System.out.println("\n=== Sistema de Inclusão Escolar ===");
             System.out.println("1. Cadastrar Novo Aluno");
