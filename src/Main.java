@@ -7,7 +7,7 @@ public class Main {
         int opcao = 0;
 
         // Dados iniciais para teste
-        gerenciador.matricularAluno(new Aluno("Carlos Silva", "2026001", true));
+        gerenciador.matricularAluno(new Aluno("Carlos Silva", "2026001", "carlossilva@gmail.com", true));
         gerenciador.registrarAcao(new AcaoInclusiva("Rampa de Acesso", "Instalação de rampa na entrada principal"));
 
         while (opcao != 5) {
@@ -27,9 +27,11 @@ public class Main {
                 String nome = scanner.nextLine();
                 System.out.print("Matrícula: ");
                 String matricula = scanner.nextLine();
+                System.out.print("Email do aluno: ");
+                String email = scanner.nextLine();
                 System.out.print("É PCD? (true/false): ");
                 boolean pcd = scanner.nextBoolean();
-                gerenciador.matricularAluno(new Aluno(nome, matricula, pcd));
+                gerenciador.matricularAluno(new Aluno(nome, matricula, email, pcd));
             } else if (opcao == 2) {
                 System.out.print("Título da Ação: ");
                 String titulo = scanner.nextLine();
