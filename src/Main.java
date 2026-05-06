@@ -11,7 +11,7 @@ public class Main {
         gerenciador.registrarAcao(new AcaoInclusiva("Rampa de Acesso", "Instalação de rampa na entrada principal"));
 
         while (opcao != 5) {
-            System.out.println("\n=== Sistema de Inclusão Escolar ===");
+            System.out.println("\n=== Plataforma de Inclusão Atitudinal - SENAC ===");
             System.out.println("1. Cadastrar Novo Aluno");
             System.out.println("2. Registrar Ação Inclusiva");
             System.out.println("3. Listar Alunos");
